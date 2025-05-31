@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniformHub | Premium School Uniform Delivery</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#2563eb 0.5px, transparent 0.5px), radial-gradient(#2563eb 0.5px, #f8fafc 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .dark .hero-pattern {
+            background-image: radial-gradient(#3b82f6 0.5px, transparent 0.5px), radial-gradient(#3b82f6 0.5px, #1e293b 0.5px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="home.html" class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L3 9V22H21V9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-xl font-bold gradient-text">UniformHub</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#collections" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Collections</a>
+                    <a href="#sizing" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sizing Guide</a>
+                    <a href="#delivery" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Delivery</a>
+                    <a href="#team" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Our Team</a>
+                </nav>
+                
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <span class="gradient-text">Premium Quality</span><br>
+                School Uniforms
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+                Find the best school uniforms at affordable prices. Order now for fast delivery!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#collections" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg">
+                    Shop Collections
+                </a>
+                <a href="#sizing" class="px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium rounded-lg transition-colors shadow-sm hover:shadow-md">
+                    Size Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center">
+                        <svg class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Get your uniforms in 2-3 business days with our express shipping</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center">
+                        <svg class="h-8 w-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Quality Guarantee</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Premium fabrics that last through the school year and beyond</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center">
+                        <svg class="h-8 w-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Best Value</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Affordable prices without compromising on quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Preview -->
+    <section id="collections" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Our Collections</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Designed for comfort, durability, and academic excellence
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Summer Collection -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 transition-transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                             alt="Summer Uniform Collection" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 px-3 py-1 rounded-full text-xs font-medium shadow-sm">
+                            New Arrival
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg mb-2">Summer Collection</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Lightweight fabrics for warm weather comfort</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600 dark:text-blue-400">$29.99 - $49.99</span>
+                            <button class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                View Options
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Winter Collection -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 transition-transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                             alt="Winter Uniform Collection" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             loading="lazy">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg mb-2">Winter Collection</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Warm and durable for cold school days</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600 dark:text-blue-400">$39.99 - $59.99</span>
+                            <button class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                View Options
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sports Collection -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 transition-transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                             alt="Sports Uniform Collection" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 px-3 py-1 rounded-full text-xs font-medium shadow-sm">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-lg mb-2">Sports Collection</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">High-performance fabrics for athletic activities</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600 dark:text-blue-400">$24.99 - $44.99</span>
+                            <button class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                View Options
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section id="delivery" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Fast & Reliable Delivery</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Get your uniforms delivered right to your door with our convenient options
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600 p-6 text-center">
+                    <div class="bg-blue-100 dark:bg-blue-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Standard Shipping</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">3-5 business days</p>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Free on orders over $50</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600 p-6 text-center">
+                    <div class="bg-purple-100 dark:bg-purple-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Express Delivery</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">1-2 business days</p>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">$9.99 flat rate</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600 p-6 text-center">
+                    <div class="bg-green-100 dark:bg-green-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Bulk Order Discount</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">For schools & organizations</p>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">10-20% off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Meet Our Team</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    The passionate professionals ensuring quality uniforms and excellent service
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden text-center">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 dark:bg-gray-700 mb-4 overflow-hidden ring-2 ring-blue-400">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <h3 class="font-semibold text-lg">Alex Johnson</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Founder & CEO</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden text-center">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 dark:bg-gray-700 mb-4 overflow-hidden ring-2 ring-blue-400">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Maria Garcia" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <h3 class="font-semibold text-lg">Maria Garcia</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Head of Design</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden text-center">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 dark:bg-gray-700 mb-4 overflow-hidden ring-2 ring-blue-400">
+                            <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Sam Wilson" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <h3 class="font-semibold text-lg">Sam Wilson</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Lead Tailor</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden text-center">
+                    <div class="p-6">
+                        <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 dark:bg-gray-700 mb-4 overflow-hidden ring-2 ring-blue-400">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Jordan Lee" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <h3 class="font-semibold text-lg">Jordan Lee</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Customer Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 dark:bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Order Your School Uniforms?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Get premium quality uniforms delivered fast to your doorstep
+            </p>
+            <a href="#contact" class="inline-block px-6 py-3 bg-white text-blue-600 font-medium rounded-lg shadow-md hover:bg-gray-100 transition-colors">
+                Contact Us Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">UniformHub</h3>
+                    <p class="text-sm">
+                        Premium school uniforms delivered to your door. Quality, convenience, and style for academic success.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#collections" class="hover:text-white transition-colors">Collections</a></li>
+                        <li><a href="#sizing" class="hover:text-white transition-colors">Sizing Guide</a></li>
+                        <li><a href="#delivery" class="hover:text-white transition-colors">Delivery Options</a></li>
+                        <li><a href="#team" class="hover:text-white transition-colors">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Support</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Returns & Exchanges</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <address class="text-sm not-italic">
+                        <p>123 School Uniform Lane</p>
+                        <p>Education City, EC 12345</p>
+                        <p class="mt-2">Email: info@uniformhub.com</p>
+                        <p>Phone: (800) 123-4567</p>
+                    </address>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-700 text-center text-sm">
+                <p>© 2025 UniformHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
