@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive sizing guide for UniformHub school uniforms. Find the perfect fit for your child with our detailed measurements and size charts.">
+    <meta name="keywords" content="school uniform sizes, uniform sizing guide, kids uniform measurements, school wear sizing">
+    <title>UniformHub | Size Guide</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio" as="script">
+    
+    <!-- Tailwind CSS and Dark Mode -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2563eb',
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            DEFAULT: '#7c3aed',
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .size-chip {
+            transition: all 0.2s ease-out;
+        }
+        .size-chip:hover {
+            background-color: #2563eb;
+            color: white;
+            transform: scale(1.05);
+        }
+        .measurement-card {
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
+        .measurement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Performance optimizations */
+        .will-change-transform {
+            will-change: transform;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        
+        /* Accessibility focus styles */
+        *:focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+    
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col antialiased">
+    
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-primary dark:text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L3 9V22H21V9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-xl font-bold gradient-text">UniformHub</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Home</a>
+                    <a href="collections.html" class="font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Collections</a>
+                    <a href="sizing.html" class="font-medium text-primary dark:text-blue-400 transition-colors duration-200">Sizing Guide</a>
+                    <a href="#faq" class="font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">FAQ</a>
+                    <a href="#contact" class="font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Contact</a>
+                </nav>
+                
+                <!-- Action Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 focus:outline-none">
+                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    
+                    <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 relative focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span class="absolute -top-1 -right-1 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                    
+                    <a href="#contact" class="px-4 py-2 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none">
+                        Order Now
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white dark:bg-gray-900 shadow-lg border-t border-gray-200 dark:border-gray-700 transition-all duration-300 px-4 py-4 space-y-6 text-gray-800 dark:text-gray-100">
+            <nav class="space-y-2">
+                <a href="index.html" class="block font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Home</a>
+                <a href="collections.html" class="block font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Collections</a>
+                <a href="sizing.html" class="block font-medium text-primary dark:text-blue-400 transition-colors duration-200">Sizing Guide</a>
+            </nav>
+    
+            <nav class="border-t border-gray-300 dark:border-gray-700 pt-4 space-y-2">
+                <a href="#faq" class="block font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">FAQ</a>
+                <a href="#contact" class="block font-medium hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Contact</a>
+            </nav>
+    
+            <div class="border-t border-gray-300 dark:border-gray-700 pt-4 space-y-3">
+                <button class="flex items-center gap-2 hover:text-primary dark:hover:text-blue-400 transition-colors duration-200 w-full text-left">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <span>View Cart (3)</span>
+                </button>
+    
+                <button id="mobile-theme-toggle" class="flex items-center gap-2 hover:text-primary dark:hover:text-blue-400 transition-colors duration-200 w-full text-left">
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path id="mobile-theme-icon" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Toggle Theme</span>
+                </button>
+                
+                <a href="#contact" class="block w-full px-4 py-2 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 text-center shadow-md hover:shadow-lg">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight animate-fade-in">
+                <span class="gradient-text">Perfect Fit</span> Every Time
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6 animate-fade-in animate-delay-100">
+                Our comprehensive sizing guide ensures your child's uniform fits comfortably and looks great
+            </p>
+            <div class="animate-fade-in animate-delay-200">
+                <a href="#measure" class="px-6 py-3 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none inline-flex items-center">
+                    How to Measure
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Size Selector -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3 animate-slide-up">Find Your Size</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto animate-slide-up animate-delay-100">
+                    Select an age range or browse our detailed size charts below
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <button class="size-chip px-6 py-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-center font-medium hover:bg-primary hover:text-white transition-colors duration-200 focus:outline-none animate-slide-up animate-delay-200">
+                    <h3 class="text-lg">Pre-School</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Ages 3-5</p>
+                </button>
+                <button class="size-chip px-6 py-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-center font-medium hover:bg-primary hover:text-white transition-colors duration-200 focus:outline-none animate-slide-up animate-delay-300">
+                    <h3 class="text-lg">Elementary</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Ages 6-11</p>
+                </button>
+                <button class="size-chip px-6 py-4 bg-primary text-white rounded-lg text-center font-medium transition-colors duration-200 focus:outline-none animate-slide-up animate-delay-400">
+                    <h3 class="text-lg">Middle School</h3>
+                    <p class="text-sm text-blue-100">Ages 12-14</p>
+                </button>
+                <button class="size-chip px-6 py-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-center font-medium hover:bg-primary hover:text-white transition-colors duration-200 focus:outline-none animate-slide-up animate-delay-500">
+                    <h3 class="text-lg">High School</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Ages 15-18</p>
+                </button>
+            </div>
+            
+            <!-- Size Charts -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-fade-in">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
+                            <tr>
+                                <th class="px-6 py-3 font-medium">Size</th>
+                                <th class="px-6 py-3 font-medium">Age</th>
+                                <th class="px-6 py-3 font-medium">Height</th>
+                                <th class="px-6 py-3 font-medium">Chest</th>
+                                <th class="px-6 py-3 font-medium">Waist</th>
+                                <th class="px-6 py-3 font-medium">Hip</th>
+                                <th class="px-6 py-3 font-medium">Inseam</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <td class="px-6 py-4 font-medium">XS</td>
+                                <td class="px-6 py-4">12-13</td>
+                                <td class="px-6 py-4">58-60"</td>
+                                <td class="px-6 py-4">28-30"</td>
+                                <td class="px-6 py-4">26-28"</td>
+                                <td class="px-6 py-4">30-32"</td>
+                                <td class="px-6 py-4">28-30"</td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <td class="px-6 py-4 font-medium">S</td>
+                                <td class="px-6 py-4">13-14</td>
+                                <td class="px-6 py-4">60-62"</td>
+                                <td class="px-6 py-4">30-32"</td>
+                                <td class="px-6 py-4">28-30"</td>
+                                <td class="px-6 py-4">32-34"</td>
+                                <td class="px-6 py-4">30-32"</td>
+                            </tr>
+                            <tr class="bg-blue-50 dark:bg-gray-700">
+                                <td class="px-6 py-4 font-medium text-primary dark:text-blue-400">M</td>
+                                <td class="px-6 py-4">14-15</td>
+                                <td class="px-6 py-4">62-64"</td>
+                                <td class="px-6 py-4">32-34"</td>
+                                <td class="px-6 py-4">30-32"</td>
+                                <td class="px-6 py-4">34-36"</td>
+                                <td class="px-6 py-4">32-34"</td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <td class="px-6 py-4 font-medium">L</td>
+                                <td class="px-6 py-4">15-16</td>
+                                <td class="px-6 py-4">64-66"</td>
+                                <td class="px-6 py-4">34-36"</td>
+                                <td class="px-6 py-4">32-34"</td>
+                                <td class="px-6 py-4">36-38"</td>
+                                <td class="px-6 py-4">34-36"</td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <td class="px-6 py-4 font-medium">XL</td>
+                                <td class="px-6 py-4">16-17</td>
+                                <td class="px-6 py-4">66-68"</td>
+                                <td class="px-6 py-4">36-38"</td>
+                                <td class="px-6 py-4">34-36"</td>
+                                <td class="px-6 py-4">38-40"</td>
+                                <td class="px-6 py-4">36-38"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="px-6 py-4 bg-gray-50 dark:bg-gray-700 text-sm text-gray-600 dark:text-gray-300">
+                    <p>All measurements in inches. For exact fit, please refer to our measurement guide below.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Measure -->
+        <section id="measure" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">How to Measure</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Follow these simple steps to ensure accurate measurements for the perfect fit
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="measurement-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 text-center animate-slide-up will-change-transform backface-hidden">
+                    <div class="bg-blue-100 dark:bg-blue-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">1</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Height</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Measure without shoes, from top of head to floor
+                    </p>
+                </div>
+                
+                <div class="measurement-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 text-center animate-slide-up animate-delay-100 will-change-transform backface-hidden">
+                    <div class="bg-blue-100 dark:bg-blue-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">2</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Chest</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Measure around fullest part with arms at sides
+                    </p>
+                </div>
+                
+                <div class="measurement-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 text-center animate-slide-up animate-delay-200 will-change-transform backface-hidden">
+                    <div class="bg-blue-100 dark:bg-blue-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">3</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Waist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Measure at natural waistline (where they normally wear pants)
+                    </p>
+                </div>
+                
+                <div class="measurement-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 text-center animate-slide-up animate-delay-300 will-change-transform backface-hidden">
+                    <div class="bg-blue-100 dark:bg-blue-900/20 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">4</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Inseam</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Measure from crotch to bottom of ankle (for pants/skirts)
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gray-50 dark:bg-gray-700 p-8">
+                        <h3 class="text-xl font-semibold mb-4">Measurement Tips</h3>
+                        <ul class="space-y-3 list-disc list-inside text-gray-700 dark:text-gray-300">
+                            <li>Use a flexible measuring tape</li>
+                            <li>Measure over light clothing or underwear</li>
+                            <li>Keep tape snug but not tight</li>
+                            <li>For accuracy, measure twice</li>
+                            <li>Have the child stand naturally with arms at sides</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200 focus:outline-none">
+                                Download Printable Measurement Guide
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <img src="https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Child getting measured for school uniform" 
+                             class="w-full h-auto rounded-lg shadow-sm"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fit Guide -->
+        <section class="mb-16 bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-sm">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-3">Uniform Fit Guide</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    How your uniform should fit for maximum comfort and appearance
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Shirts & Blouses</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Shoulder seams should sit at the edge of the shoulder
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Sleeves should end at the wrist bone
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Shirt length should cover the waistband of pants/skirt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Pants & Skirts</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Waist should fit comfortably without needing to tighten belt excessively
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Pants should break slightly at the shoe without dragging
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 dark:bg-blue-900/20 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 flex-1">
+                                Skirts should fall at regulation length (typically just above the knee)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Frequently Asked Questions</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Common questions about sizing and fit
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-slide-up">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-medium">What if my child is between sizes?</h3>
+                        <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We recommend sizing up if your child is between sizes, especially for growing children. Our uniforms are designed with some room for growth, and it's better to have a slightly larger uniform that can be adjusted with belts or tailoring than one that's too small.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-slide-up animate-delay-100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-medium">How much room should be left for growth?</h3>
+                        <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We recommend allowing about 1-2 inches in length for growing room. For width, the uniform should fit comfortably now with just a little room (about 1 inch) in the chest and waist. Remember that our uniforms are designed to last an entire school year with normal growth patterns.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-slide-up animate-delay-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-medium">What if the uniform doesn't fit when it arrives?</h3>
+                        <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We offer free exchanges within 30 days of purchase if the size isn't quite right. Simply contact our customer service team with your order number and the size you need, and we'll handle the exchange process. For more details, visit our Returns & Exchanges page.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden animate-slide-up animate-delay-300">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-medium">Do you offer custom sizing for special needs?</h3>
+                        <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Yes! We understand that every child is unique. For children with special sizing needs, we offer a custom tailoring service. Please contact our customer service team at least 4 weeks before you need the uniform to discuss your specific requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section id="contact" class="bg-primary dark:bg-blue-900 rounded-xl shadow-md overflow-hidden animate-fade-in">
+            <div class="md:flex">
+                <div class="md:w-1/2 bg-primary dark:bg-blue-900 p-8 md:p-12 text-white">
+                    <h2 class="text-2xl font-bold mb-4">Still Unsure About Size?</h2>
+                    <p class="mb-6 opacity-90">
+                        Our customer service team is happy to help you determine the perfect size for your child. Contact us with measurements or any questions.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-white/10 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone Support</h4>
+                                <p class="opacity-90">(+250) 787-470-126</p>
+                                <p class="text-sm opacity-75">Mon-Fri, 9am-5pm EST</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white/10 p-2 rounded-lg mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email Us</h4>
+                                <p class="opacity-90">support@uniformhub.com</p>
+                                <p class="text-sm opacity-75">Typically responds within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-white dark:bg-gray-800 p-8 md:p-12">
+                    <h3 class="text-xl font-semibold mb-6">Quick Size Question?</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="quick-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="quick-name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 transition-colors duration-200" required>
+                        </div>
+                        <div>
+                            <label for="quick-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="quick-email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 transition-colors duration-200" required>
+                        </div>
+                        <div>
+                            <label for="quick-question" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Question</label>
+                            <textarea id="quick-question" rows="3" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 transition-colors duration-200" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none">
+                            Send Question
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 flex items-center">
+                        <svg class="h-6 w-6 text-primary dark:text-blue-400 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L3 9V22H21V9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        UniformHub
+                    </h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Premium school uniforms delivered to your door. Quality, convenience, and style for academic success.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shop</h3>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="collections.html" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Collections</a></li>
+                        <li><a href="sizing.html" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#contact" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="#faq" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">FAQs</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-primary dark:hover:text-blue-400 transition-colors duration-200">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-500 dark:text-gray-400">
+                <p>© 2025 UniformHub. All rights reserved.</p>
+                <p class="mt-1">Premium school uniform delivery service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-primary text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-200 focus:outline-none hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Elements
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const mobileThemeIcon = document.getElementById('mobile-theme-icon');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const backToTopButton = document.getElementById('back-to-top');
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        // Initial Theme Setup
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const currentTheme = localStorage.getItem('color-theme');
+        const isDark = currentTheme === 'dark' || (!currentTheme && prefersDark);
+        if (isDark) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    
+        // Theme Toggle Function
+        function toggleTheme() {
+            const isNowDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('color-theme', isNowDark ? 'dark' : 'light');
+            updateThemeIcons(isNowDark);
+        }
+    
+        // Update Theme Icons
+        function updateThemeIcons(isDarkMode) {
+            if (themeIcon && mobileThemeIcon) {
+                const sunIcon = `<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />`;
+                const moonIcon = `<path fill-rule="evenodd" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" clip-rule="evenodd" />`;
+                themeIcon.innerHTML = isDarkMode ? sunIcon : moonIcon;
+                mobileThemeIcon.innerHTML = isDarkMode ? sunIcon : moonIcon;
+            }
+        }
+    
+        // Attach Theme Toggle Listeners
+        themeToggle?.addEventListener('click', toggleTheme);
+        mobileThemeToggle?.addEventListener('click', toggleTheme);
+    
+        // Initial icon update
+        updateThemeIcons(isDark);
+    
+        // Mobile Menu Toggle
+        mobileMenuButton?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            document.body.style.overflow = mobileMenu.classList.contains('hidden') ? '' : 'hidden';
+        });
+    
+        // Close menu on any link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+        });
+    
+        // FAQ Toggle
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('svg');
+                
+                // Toggle content
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open FAQs
+                faqToggles.forEach(otherToggle => {
+                    if (otherToggle !== toggle) {
+                        otherToggle.nextElementSibling.classList.add('hidden');
+                        otherToggle.querySelector('svg').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+    
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    
+        // Size Chip Selector
+        document.querySelectorAll('.size-chip').forEach(chip => {
+            chip.addEventListener('click', function() {
+                document.querySelectorAll('.size-chip').forEach(c => {
+                    c.classList.remove('bg-primary', 'text-white');
+                    c.classList.add('bg-gray-100', 'dark:bg-gray-800');
+                });
+                this.classList.add('bg-primary', 'text-white');
+                this.classList.remove('bg-gray-100', 'dark:bg-gray-800');
+            });
+        });
+        
+        // Intersection Observer for animations
+        const animateElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    
+                    // Remove animation classes after they've played
+                    setTimeout(() => {
+                        entry.target.classList.remove('animate-slide-up', 'animate-fade-in');
+                    }, 1000);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+            
+            // Set initial styles for animation
+            if (element.classList.contains('animate-slide-up')) {
+                element.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-500', 'ease-out');
+            } else if (element.classList.contains('animate-fade-in')) {
+                element.classList.add('opacity-0', 'transition-opacity', 'duration-500', 'ease-out');
+            }
+        });
+        
+        // Delay animations for staggered effect
+        document.querySelectorAll('[class*="animate-delay"]').forEach(el => {
+            const delay = el.classList.toString().match(/animate-delay-(\d+)/);
+            if (delay) {
+                el.style.transitionDelay = `${delay[1] * 100}ms`;
+            }
+        });
+    </script>
+</body>
+</html>
